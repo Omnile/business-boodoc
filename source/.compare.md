@@ -38,7 +38,8 @@ Manage Resturant Admin Account
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/account" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -81,6 +82,7 @@ Update the authenticated user account.
 ```bash
 curl -X POST "http://business.booconnect.run/api/b/v1/account" \
 -H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a" \
     -d "firstname"="cupiditate" \
     -d "lastname"="cupiditate" \
     -d "username"="cupiditate" \
@@ -144,7 +146,8 @@ Display the order history list.
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/completed-orders" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -186,7 +189,8 @@ Get a completed order form storage
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/completed-orders/{completed_order}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -231,7 +235,8 @@ Get a list of paginated items.
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/items" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -274,6 +279,7 @@ Store a newly created Item in storage.
 ```bash
 curl -X POST "http://business.booconnect.run/api/b/v1/items" \
 -H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a" \
     -d "name"="sed" \
     -d "price"="1149859159" \
     -d "image"="sed" \
@@ -334,7 +340,8 @@ Get a single Item
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/items/{item}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -377,6 +384,7 @@ Update an item.
 ```bash
 curl -X PUT "http://business.booconnect.run/api/b/v1/items/{item}" \
 -H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a" \
     -d "name"="officiis" \
     -d "price"="1875054879" \
     -d "image"="officiis" \
@@ -439,7 +447,8 @@ Remove an Item from the Items in this store.
 
 ```bash
 curl -X DELETE "http://business.booconnect.run/api/b/v1/items/{item}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -476,7 +485,8 @@ Query paginated list of pending orders.
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/pending-orders" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -517,7 +527,8 @@ null
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/pending-orders/{pending_order}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -561,7 +572,8 @@ This option is only available within first 5 mins from time of order.
 
 ```bash
 curl -X DELETE "http://business.booconnect.run/api/b/v1/pending-orders/{pending_order}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -597,7 +609,8 @@ Manage Resturant Settings
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/settings" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -641,6 +654,7 @@ Update the Business (restaurant) configurations
 ```bash
 curl -X POST "http://business.booconnect.run/api/b/v1/settings" \
 -H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a" \
     -d "name"="ut" \
     -d "phone"="58019" \
     -d "registration_no"="58019" \
@@ -719,7 +733,8 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/login" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -760,7 +775,8 @@ null
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/register" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -801,7 +817,8 @@ null
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/dashboard" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -842,7 +859,8 @@ null
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/dashboard/create" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -883,7 +901,8 @@ null
 
 ```bash
 curl -X POST "http://business.booconnect.run/api/b/v1/dashboard" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -917,7 +936,8 @@ $.ajax(settings).done(function (response) {
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/dashboard/{dashboard}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -958,7 +978,8 @@ null
 
 ```bash
 curl -X GET "http://business.booconnect.run/api/b/v1/dashboard/{dashboard}/edit" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -999,7 +1020,8 @@ null
 
 ```bash
 curl -X PUT "http://business.booconnect.run/api/b/v1/dashboard/{dashboard}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript
@@ -1035,7 +1057,8 @@ $.ajax(settings).done(function (response) {
 
 ```bash
 curl -X DELETE "http://business.booconnect.run/api/b/v1/dashboard/{dashboard}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"
 ```
 
 ```javascript

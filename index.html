@@ -61,7 +61,8 @@ A new api key will be granted when loed in and thereafter, the server will expec
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/account" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -91,6 +92,7 @@ $.ajax(settings).done(function (response) {
 </blockquote>
 <pre><code class="language-bash">curl -X POST "http://business.booconnect.run/api/b/v1/account" \
 -H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a" \
     -d "firstname"="cupiditate" \
     -d "lastname"="cupiditate" \
     -d "username"="cupiditate" \
@@ -180,7 +182,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/completed-orders" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -209,7 +212,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/completed-orders/{completed_order}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -240,7 +244,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/items" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -270,6 +275,7 @@ $.ajax(settings).done(function (response) {
 </blockquote>
 <pre><code class="language-bash">curl -X POST "http://business.booconnect.run/api/b/v1/items" \
 -H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a" \
     -d "name"="sed" \
     -d "price"="1149859159" \
     -d "image"="sed" \
@@ -354,7 +360,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/items/{item}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -384,6 +391,7 @@ $.ajax(settings).done(function (response) {
 </blockquote>
 <pre><code class="language-bash">curl -X PUT "http://business.booconnect.run/api/b/v1/items/{item}" \
 -H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a" \
     -d "name"="officiis" \
     -d "price"="1875054879" \
     -d "image"="officiis" \
@@ -469,7 +477,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE "http://business.booconnect.run/api/b/v1/items/{item}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -495,7 +504,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/pending-orders" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -523,7 +533,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/pending-orders/{pending_order}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -553,7 +564,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE "http://business.booconnect.run/api/b/v1/pending-orders/{pending_order}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -578,7 +590,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/settings" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -608,6 +621,7 @@ $.ajax(settings).done(function (response) {
 </blockquote>
 <pre><code class="language-bash">curl -X POST "http://business.booconnect.run/api/b/v1/settings" \
 -H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a" \
     -d "name"="ut" \
     -d "phone"="58019" \
     -d "registration_no"="58019" \
@@ -733,7 +747,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/login" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -761,7 +776,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/register" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -789,7 +805,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/dashboard" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -817,7 +834,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/dashboard/create" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -845,7 +863,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST "http://business.booconnect.run/api/b/v1/dashboard" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -868,7 +887,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/dashboard/{dashboard}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -896,7 +916,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET "http://business.booconnect.run/api/b/v1/dashboard/{dashboard}/edit" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -924,7 +945,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT "http://business.booconnect.run/api/b/v1/dashboard/{dashboard}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
@@ -948,7 +970,8 @@ $.ajax(settings).done(function (response) {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE "http://business.booconnect.run/api/b/v1/dashboard/{dashboard}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+-H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0a"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
