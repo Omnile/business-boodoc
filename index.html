@@ -264,17 +264,62 @@ $.ajax(settings).done(function (response) {
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>firstname</td>
+<td>string</td>
+<td>required</td>
+<td>The first name of the user</td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>string</td>
+<td>required</td>
+<td>The last name of the user</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>string</td>
+<td>retuired</td>
+<td>The gender of the user <code>male</code> or <code>female</code>,</td>
+</tr>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>The username of the user</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+<td>The password of the use</td>
+</tr>
+<tr>
+<td>password_confirmation</td>
+<td>string</td>
+<td>required</td>
+<td>A confirmation of the password</td>
+</tr>
+<tr>
+<td>restaurant_name</td>
+<td>string</td>
+<td>required</td>
+<td>The name of the restaurant to register</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>required</td>
+<td>This will be the number for the user and restaurant.</td>
+</tr>
+<tr>
+<td>registration_no</td>
+<td>integer</td>
+<td>required</td>
+<td>This is the business registration number</td>
+</tr>
 </tbody>
 </table>
-<pre><code>firstname | string | required | The first name of the user
-lastname | string | required | The last name of the user
-gender | string | retuired | The gender of the user `male` or `female`,
-username | string | required |  The username of the user
-password | string | required |  The password of the use
-password_confirmation | string | required | A confirmation of the password
-restaurant_name | string | required | The name of the restaurant to register
-phone | string | required | This will be the number for the user and restaurant.
-registration_no | integer | required | This is the business registration number</code></pre>
 <h2>Register User Customer Account</h2>
 <p>Register a customer account.</p>
 <blockquote>
@@ -340,15 +385,50 @@ $.ajax(settings).done(function (response) {
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>firstname</td>
+<td>string</td>
+<td>required</td>
+<td>The first name of the user</td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>string</td>
+<td>required</td>
+<td>The last name of the user</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>string</td>
+<td>retuired</td>
+<td>The gender of the user <code>male</code> or <code>female</code>,</td>
+</tr>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>The username of the user</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+<td>The password of the use</td>
+</tr>
+<tr>
+<td>password_confirmation</td>
+<td>string</td>
+<td>required</td>
+<td>A confirmation of the password</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>required</td>
+<td>This will be the number for the user and restaurant.</td>
+</tr>
 </tbody>
 </table>
-<pre><code>firstname | string | required | The first name of the user
-lastname | string | required | The last name of the user
-gender | string | retuired | The gender of the user `male` or `female`,
-username | string | required |  The username of the user
-password | string | required |  The password of the use
-password_confirmation | string | required | A confirmation of the password
-phone | string | required | This will be the number for the user and restaurant.</code></pre>
 <!-- END_INFO -->
 <h1>Account</h1>
 <p>Manage Resturant Admin Account</p>
@@ -377,7 +457,19 @@ $.ajax(settings).done(function (response) {
 <p>Example response:</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Unauthenticated."
+    "id": 1,
+    "firstname": "Enoch",
+    "lastname": "Stroman",
+    "username": "elijah37",
+    "phone": "790.894.7383",
+    "gender": "female",
+    "restaurant_id": 1,
+    "phone_verified": 1,
+    "email_verified": 1,
+    "deleted_at": null,
+    "created_at": "2018-03-23 17:33:11",
+    "updated_at": "2018-03-23 17:33:11",
+    "name": "Enoch Stroman"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/b/v1/account</code></p>
@@ -500,7 +592,55 @@ $.ajax(settings).done(function (response) {
 <p>Example response:</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Unauthenticated."
+    "current_page": 1,
+    "data": [
+        {
+            "id": 1,
+            "quantity": 9,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "restaurant_id": 1,
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 3,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "restaurant_id": 1,
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 4,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "restaurant_id": 1,
+            "formatted_price": "GHC 1.00"
+        }
+    ],
+    "first_page_url": "http:\/\/localhost\/api\/b\/v1\/completed-orders?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http:\/\/localhost\/api\/b\/v1\/completed-orders?page=1",
+    "next_page_url": null,
+    "path": "http:\/\/localhost\/api\/b\/v1\/completed-orders",
+    "per_page": 20,
+    "prev_page_url": null,
+    "to": 3,
+    "total": 3
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/b/v1/completed-orders</code></p>
@@ -532,7 +672,15 @@ $.ajax(settings).done(function (response) {
 <p>Example response:</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Unauthenticated."
+    "id": 1,
+    "quantity": 9,
+    "price": "1",
+    "item_id": 1,
+    "user_id": 1,
+    "status": "transit",
+    "created_at": "2018-03-23 17:33:12",
+    "updated_at": "2018-03-23 17:33:12",
+    "formatted_price": "GHC 1.00"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/b/v1/completed-orders/{completed_order}</code></p>
@@ -732,7 +880,79 @@ $.ajax(settings).done(function (response) {
 <p>Example response:</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Unauthenticated."
+    "id": 1,
+    "name": "RIce &amp; beans",
+    "restaurant_id": 1,
+    "image": "https:\/\/lorempixel.com\/150\/150\/food\/?71002",
+    "description": "Ut corporis omnis quia reiciendis eveniet laudantium maxime.",
+    "price": 1,
+    "user_id": 1,
+    "measurement": "plate",
+    "quantity": 2,
+    "deleted_at": null,
+    "created_at": "2018-03-23 17:33:11",
+    "updated_at": "2018-03-23 17:33:11",
+    "formatted_price": "GHC 1.00",
+    "cart": [],
+    "qty": 0,
+    "in_cart": false,
+    "rating": [],
+    "orders": [
+        {
+            "id": 1,
+            "quantity": 9,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 2,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "pending",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 3,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 4,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "formatted_price": "GHC 1.00"
+        }
+    ],
+    "pictures": {
+        "id": 1,
+        "imageable_id": 1,
+        "path": "https:\/\/lorempixel.com\/150\/150\/food\/?66415",
+        "description": "THE VOICE OF THE.",
+        "imageable_type": "App\\Item",
+        "created_at": "2018-03-23 17:33:12",
+        "updated_at": "2018-03-23 17:33:12"
+    },
+    "wishlist": []
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/b/v1/items/{item}</code></p>
@@ -882,7 +1102,31 @@ $.ajax(settings).done(function (response) {
 <p>Example response:</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Unauthenticated."
+    "current_page": 1,
+    "data": [
+        {
+            "id": 2,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "pending",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "restaurant_id": 1,
+            "formatted_price": "GHC 1.00"
+        }
+    ],
+    "first_page_url": "http:\/\/localhost\/api\/b\/v1\/pending-orders?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http:\/\/localhost\/api\/b\/v1\/pending-orders?page=1",
+    "next_page_url": null,
+    "path": "http:\/\/localhost\/api\/b\/v1\/pending-orders",
+    "per_page": 20,
+    "prev_page_url": null,
+    "to": 1,
+    "total": 1
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/b/v1/pending-orders</code></p>
@@ -913,7 +1157,15 @@ $.ajax(settings).done(function (response) {
 <p>Example response:</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Unauthenticated."
+    "id": 1,
+    "quantity": 9,
+    "price": "1",
+    "item_id": 1,
+    "user_id": 1,
+    "status": "transit",
+    "created_at": "2018-03-23 17:33:12",
+    "updated_at": "2018-03-23 17:33:12",
+    "formatted_price": "GHC 1.00"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/b/v1/pending-orders/{pending_order}</code></p>
@@ -976,7 +1228,25 @@ $.ajax(settings).done(function (response) {
 <p>Example response:</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Unauthenticated."
+    "id": 1,
+    "name": "Sawayn-Smitham",
+    "phone": "+1.820.682.4627",
+    "registration_no": "61705",
+    "owner_id": "1",
+    "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?32283",
+    "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?48519",
+    "place": "Riceborough",
+    "city": "West Vivianneville",
+    "state": "Arizona",
+    "country": "Djibouti",
+    "address": "3391 Parker Circle",
+    "website": "hills.com",
+    "description": "Perferendis eaque magni enim est optio est cumque.",
+    "phone_verified": 0,
+    "email_verified": 1,
+    "deleted_at": null,
+    "created_at": "2018-03-23 17:33:11",
+    "updated_at": "2018-03-23 17:33:11"
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/b/v1/settings</code></p>

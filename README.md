@@ -232,7 +232,6 @@ $.ajax(settings).done(function (response) {
 
 Parameter | Type | Status | Description
 ---------|-------|-------|-------|-----------
-
     firstname | string | required | The first name of the user
     lastname | string | required | The last name of the user
     gender | string | retuired | The gender of the user `male` or `female`,
@@ -314,7 +313,6 @@ $.ajax(settings).done(function (response) {
 
 Parameter | Type | Status | Description
 ---------|-------|-------|-------|-----------
-
     firstname | string | required | The first name of the user
     lastname | string | required | The last name of the user
     gender | string | retuired | The gender of the user `male` or `female`,
@@ -357,7 +355,19 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Unauthenticated."
+    "id": 1,
+    "firstname": "Enoch",
+    "lastname": "Stroman",
+    "username": "elijah37",
+    "phone": "790.894.7383",
+    "gender": "female",
+    "restaurant_id": 1,
+    "phone_verified": 1,
+    "email_verified": 1,
+    "deleted_at": null,
+    "created_at": "2018-03-23 17:33:11",
+    "updated_at": "2018-03-23 17:33:11",
+    "name": "Enoch Stroman"
 }
 ```
 
@@ -467,7 +477,55 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Unauthenticated."
+    "current_page": 1,
+    "data": [
+        {
+            "id": 1,
+            "quantity": 9,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "restaurant_id": 1,
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 3,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "restaurant_id": 1,
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 4,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "restaurant_id": 1,
+            "formatted_price": "GHC 1.00"
+        }
+    ],
+    "first_page_url": "http:\/\/localhost\/api\/b\/v1\/completed-orders?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http:\/\/localhost\/api\/b\/v1\/completed-orders?page=1",
+    "next_page_url": null,
+    "path": "http:\/\/localhost\/api\/b\/v1\/completed-orders",
+    "per_page": 20,
+    "prev_page_url": null,
+    "to": 3,
+    "total": 3
 }
 ```
 
@@ -512,7 +570,15 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Unauthenticated."
+    "id": 1,
+    "quantity": 9,
+    "price": "1",
+    "item_id": 1,
+    "user_id": 1,
+    "status": "transit",
+    "created_at": "2018-03-23 17:33:12",
+    "updated_at": "2018-03-23 17:33:12",
+    "formatted_price": "GHC 1.00"
 }
 ```
 
@@ -715,7 +781,79 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Unauthenticated."
+    "id": 1,
+    "name": "RIce & beans",
+    "restaurant_id": 1,
+    "image": "https:\/\/lorempixel.com\/150\/150\/food\/?71002",
+    "description": "Ut corporis omnis quia reiciendis eveniet laudantium maxime.",
+    "price": 1,
+    "user_id": 1,
+    "measurement": "plate",
+    "quantity": 2,
+    "deleted_at": null,
+    "created_at": "2018-03-23 17:33:11",
+    "updated_at": "2018-03-23 17:33:11",
+    "formatted_price": "GHC 1.00",
+    "cart": [],
+    "qty": 0,
+    "in_cart": false,
+    "rating": [],
+    "orders": [
+        {
+            "id": 1,
+            "quantity": 9,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 2,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "pending",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 3,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "formatted_price": "GHC 1.00"
+        },
+        {
+            "id": 4,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "transit",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "formatted_price": "GHC 1.00"
+        }
+    ],
+    "pictures": {
+        "id": 1,
+        "imageable_id": 1,
+        "path": "https:\/\/lorempixel.com\/150\/150\/food\/?66415",
+        "description": "THE VOICE OF THE.",
+        "imageable_type": "App\\Item",
+        "created_at": "2018-03-23 17:33:12",
+        "updated_at": "2018-03-23 17:33:12"
+    },
+    "wishlist": []
 }
 ```
 
@@ -867,7 +1005,31 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Unauthenticated."
+    "current_page": 1,
+    "data": [
+        {
+            "id": 2,
+            "quantity": 4,
+            "price": "1",
+            "item_id": 1,
+            "user_id": 1,
+            "status": "pending",
+            "created_at": "2018-03-23 17:33:12",
+            "updated_at": "2018-03-23 17:33:12",
+            "restaurant_id": 1,
+            "formatted_price": "GHC 1.00"
+        }
+    ],
+    "first_page_url": "http:\/\/localhost\/api\/b\/v1\/pending-orders?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http:\/\/localhost\/api\/b\/v1\/pending-orders?page=1",
+    "next_page_url": null,
+    "path": "http:\/\/localhost\/api\/b\/v1\/pending-orders",
+    "per_page": 20,
+    "prev_page_url": null,
+    "to": 1,
+    "total": 1
 }
 ```
 
@@ -911,7 +1073,15 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Unauthenticated."
+    "id": 1,
+    "quantity": 9,
+    "price": "1",
+    "item_id": 1,
+    "user_id": 1,
+    "status": "transit",
+    "created_at": "2018-03-23 17:33:12",
+    "updated_at": "2018-03-23 17:33:12",
+    "formatted_price": "GHC 1.00"
 }
 ```
 
@@ -1000,7 +1170,25 @@ $.ajax(settings).done(function (response) {
 
 ```json
 {
-    "message": "Unauthenticated."
+    "id": 1,
+    "name": "Sawayn-Smitham",
+    "phone": "+1.820.682.4627",
+    "registration_no": "61705",
+    "owner_id": "1",
+    "image": "https:\/\/lorempixel.com\/150\/150\/nightlife\/?32283",
+    "cover": "https:\/\/lorempixel.com\/500\/150\/technics\/?48519",
+    "place": "Riceborough",
+    "city": "West Vivianneville",
+    "state": "Arizona",
+    "country": "Djibouti",
+    "address": "3391 Parker Circle",
+    "website": "hills.com",
+    "description": "Perferendis eaque magni enim est optio est cumque.",
+    "phone_verified": 0,
+    "email_verified": 1,
+    "deleted_at": null,
+    "created_at": "2018-03-23 17:33:11",
+    "updated_at": "2018-03-23 17:33:11"
 }
 ```
 
